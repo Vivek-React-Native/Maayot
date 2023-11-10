@@ -1,0 +1,23 @@
+{
+  "name": "maayot-mobile",
+  "version": "1.0.0",
+  "description": "Maayot mobile",
+  "author": "211211",
+  "dependencies": {
+    "@types/prettier": "^2.2.1",
+    "opencc-js": "^1.0.3",
+    "prettier": "^2.2.1",
+    "react": "16.13.1",
+    "react-native": "0.63.3",
+    "react-native-iap": "^6.0.6"
+  },
+  "scripts": {
+    "format:server": "./node_modules/.bin/prettier --write \"mock-server/index.js\"",
+    "format:src": "./node_modules/.bin/prettier --write \"src/**/*.{ts,tsx}\"",
+    "format": "yarn format:server && yarn format:src"
+  },
+  "devDependencies": {
+    "@types/react": "^17.0.0",
+    "@types/react-native": "^0.63.37"
+  }
+}

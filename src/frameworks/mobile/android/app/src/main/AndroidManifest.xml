@@ -1,0 +1,99 @@
+<!-- <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+  package="com.maayot">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+      android:name=".MainActivity"
+      android:launchMode="singleTask"
+      android:label="@string/app_name"
+      android:icon="@mipmap/ic_launcher"
+      android:roundIcon="@mipmap/ic_launcher_round"
+      android:allowBackup="false"
+      android:theme="@style/AppTheme"
+      android:versionCode="16"
+      android:versionName="0.1.7"
+      >
+      <activity
+        android:name=".MainActivity"
+        android:label="@string/app_name"
+        android:configChanges="keyboard|keyboardHidden|orientation|screenSize|uiMode"
+        android:launchMode="singleTask"
+        android:windowSoftInputMode="adjustResize">
+        <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+        </intent-filter>
+
+                    <intent-filter>
+                <data android:scheme="maayot" android:host="maayot.app.link"/>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+            </intent-filter>
+
+                        <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data android:scheme="https" android:host="maayot.app.link" />
+            </intent-filter>
+
+      </activity>
+       <meta-data android:name="io.branch.sdk.BranchKey" android:value="key_live_pjYBeKoLXRwLRMMFTT6CsbgptxjRSXu2"/>
+       <meta-data android:name="io.branch.sdk.BranchKey.test" android:value="key_test_ca3teQoJ8KBTUPMAG4wETkcfEylMI9Kc"/>
+      <activity android:name="com.facebook.react.devsupport.DevSettingsActivity" />
+    </application>
+
+</manifest> -->
+
+
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+  package="com.maayot">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="com.android.vending.BILLING" />
+
+    <application
+      android:name=".MainApplication"
+      android:label="@string/app_name"
+      android:icon="@mipmap/ic_launcher"
+      android:roundIcon="@mipmap/ic_launcher_round"
+      android:allowBackup="false"
+      android:theme="@style/AppTheme"
+      android:versionCode="18"
+      android:versionName="0.1.8"
+      >
+      <activity
+        android:name=".MainActivity"
+        android:label="@string/app_name"
+          android:exported="true"
+        android:configChanges="keyboard|keyboardHidden|orientation|screenSize|uiMode"
+        android:launchMode="singleTask"
+        android:windowSoftInputMode="adjustResize">
+
+        
+        <intent-filter>
+            <action android:name="android.intent.action.MAIN" />
+            <category android:name="android.intent.category.LAUNCHER" />
+        </intent-filter>
+                  <intent-filter>
+                <data android:scheme="maayot" />
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+            </intent-filter>
+                        <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data android:scheme="https" android:host="maayot.app.link" />
+            </intent-filter>
+      </activity>
+      <meta-data android:name="io.branch.sdk.BranchKey" android:value="key_live_pjYBeKoLXRwLRMMFTT6CsbgptxjRSXu2"/>
+        <meta-data android:name="io.branch.sdk.BranchKey.test" android:value="key_test_ca3teQoJ8KBTUPMAG4wETkcfEylMI9Kc"/>
+      
+      <activity android:name="com.facebook.react.devsupport.DevSettingsActivity" />
+    </application>
+
+</manifest>
